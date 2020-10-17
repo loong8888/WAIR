@@ -50,6 +50,7 @@
                    <img src="results/COCO_division_model_dataset_FOV_5.gif" width="270" />  
 </p>
 
+
 #### Using DM distortion model
 
 #### Using ED distortion model
@@ -57,5 +58,9 @@
 ### More results for DM model test on ADE20k dataset
 
 ### Test on real fisheye video dataset
+<p float="left">   <img src="results/AlfaA.gif" width="270" />   
+                   <img src="results/LectureB.gif" width="270" />   
+                   <img src="results/LibraryE.gif" width="270" />  
+</p>
 
 
