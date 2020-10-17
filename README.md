@@ -63,7 +63,7 @@
                    <img src="results/COCO_division_model_dataset_ED_5.gif" width="270" />  
 </p>
 
-### More results for DM model
+### More test results for DM model on ADE20k, WireFrame and COCO dataset
 <p float="left">   <img src="results/ADE20K_division_model_dataset_DMDM_8.gif" width="270" />   
                    <img src="results/ADE20K_division_model_dataset_DMDM_10.gif" width="270" />   
                    <img src="results/ADE20K_division_model_dataset_DMDM_14.gif" width="270" />  
