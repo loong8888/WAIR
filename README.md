@@ -70,7 +70,7 @@
 </p>
 <p float="left">   <img src="results/COCO_division_model_dataset_DMDM_2.gif" width="270" />   
                    <img src="results/COCO_division_model_dataset_DMDM_5.gif" width="270" />   
-                   <img src="results/COCO_division_model_dataset_DMDM_9.gif" width="270" />  
+                   <img src="results/COCO_division_model_dataset_DMDM_11.gif" width="270" />  
 </p>
 <p float="left">   <img src="results/WireFrame_division_model_dataset_DMDM_3.gif" width="270" />   
                    <img src="results/WireFrame_division_model_dataset_DMDM_6.gif" width="270" />   
