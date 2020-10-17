@@ -4,9 +4,17 @@
 ## Test Results
 
 ### Test on ADE20k dataset
-<video id="video" controls="" preload="none">
-    <source id="mp4" src="./results/ADE20K_division_model_dataset_FOV_2.mp4" type="video/mp4">
-</video>
+
+#### Using FOV distortion model
+
+<p float="left">   <img src="results/ADE20K_division_model_dataset_FOV_1.gif" width="300" />   <img src="results/ADE20K_division_model_dataset_FOV_2.gif" width="300" />   <img src="results/ADE20K_division_model_dataset_FOV_3.gif" width="300" />  </p>
+
+
+
+
+
+
+
 
 
 ### Test on WireFrame dataset
@@ -14,3 +22,4 @@
 ### Test on COCO dataset
 
 ### 
+
