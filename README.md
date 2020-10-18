@@ -20,6 +20,7 @@ For each
 |**FOV**|	 26.43/0.85|	16.65/0.45|	18.84/0.54|
 |**DM**|	 21.034/0.63|	24.76/0.81|	25.48/0.83|
 |**ED**|	 18.83/0.56|	23.37/0.75|	26.01/0.84|
+
 The visual results are shown [here](./results/ADE20k.md)
 
 ### Test on WireFrame dataset
@@ -28,6 +29,7 @@ The visual results are shown [here](./results/ADE20k.md)
 |**FOV**|	26.45/0.86|	16.65/0.51|	19.06/0.61|
 |**DM**|	21.02/0.68|	25.10/0.83|	25.32/0.84|
 |**ED**|	19.02/0.63|	23.77/0.79|	25.83/0.85|
+
 The visual results are shown [here](./results/WireFrame.md)
 
 
@@ -37,6 +39,7 @@ The visual results are shown [here](./results/WireFrame.md)
 |**FOV**|	25.91/0.84|	16.09/0.43|	18.51/0.53|
 |**DM**|	20.43/0.61|	24.00/0.79|	24.83/0.81|
 |**ED**|	18.50/0.55|	22.73/0.74|	25.45/0.83|
+
 The visual results are shown [here](./results/COCO.md)
 
 
