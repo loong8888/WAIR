@@ -6,9 +6,9 @@
 ### Test on ADE20k dataset
 
 #### Using FOV distortion model
-<p float="left">   <img src="https://github.com/loong8888/IJCV2020_WAIR/tree/main/results/ADE20K_division_model_dataset_FOV_1.gif" width="270" />   
-                   <img src="https://github.com/loong8888/IJCV2020_WAIR/tree/main/results/ADE20K_division_model_dataset_FOV_2.gif" width="270" />   
-                   <img src="https://github.com/loong8888/IJCV2020_WAIR/tree/main/results/ADE20K_division_model_dataset_FOV_3.gif" width="270" />  
+<p float="left">   <img src="https://github.com/loong8888/IJCV2020_WAIR/results/ADE20K_division_model_dataset_FOV_1.gif" width="270" />   
+                   <img src="https://github.com/loong8888/IJCV2020_WAIR/results/ADE20K_division_model_dataset_FOV_2.gif" width="270" />   
+                   <img src="https://github.com/loong8888/IJCV2020_WAIR/results/ADE20K_division_model_dataset_FOV_3.gif" width="270" />  
 </p>
 
 #### Using DM distortion model
