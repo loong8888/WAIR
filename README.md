@@ -3,7 +3,9 @@
 
 ## Test Results
 
-### Test on ADE20k dataset
+### Test on ADE20k dataset 
+[results](./results/ADE20k.md)
+
 | FOV | DM | ED |
 | :----:| :----: | :----: |
 | ![](results/ADE20K_division_model_dataset_FOV_1.gif) | ![](results/ADE20K_division_model_dataset_DM_2.gif) | ![](results/ADE20K_division_model_dataset_ED_4.gif) |
