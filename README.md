@@ -49,7 +49,7 @@ The visual results are shown [here](./results/COCO.md)
 | ![](results/ADE20K_division_model_dataset_DMDM_14.gif) | ![](results/WireFrame_division_model_dataset_DMDM_15.gif)      |   ![](results/COCO_division_model_dataset_DMDM_11.gif)    |
 
 ### Test on real fisheye video dataset
-The real fisheye image has to be resized to 257x257 to match the input size of the network. But the distortion parameter $k$ estimated on this low-resolution image can be used to rectify the original high-resolution image with little more computation for the warp module. Here, we test the image at 256x256, 512x512, and 1024x1024. The warping time of the warp module is 1.2ms, 2.1ms, and 5.3ms respectively. 
+The real fisheye image has to be resized to 257x257 to match the input size of the network. But the distortion parameter $k$ estimated on this low-resolution image can be used to rectify the original high-resolution image with little more computation for the warp module. Here, we test the image at 256x256, 512x512, and 1024x1024. The time cost of the warp module is 1.2ms, 2.1ms, and 5.3ms , respectively. 
 
 |           |            AlfaA            |            LectureB            |            LibraryE            | Warping time (ms) |
 | :-------: | :-------------------------: | :----------------------------: | :----------------------------: | :---------------: |
