@@ -1,4 +1,4 @@
-# IJCV2020_WAIR
+# WAIR
 ## Introduction
 This repository contains the dataset, code, and test results for the baseline method proposed in the paper [Wide-angle Image Rectification: A Survey](). Based on three types of distortion models, i.e., the FOV model (FOV for short), the one-parameter division model (DM for short) and the equidistant model (ED for short), and three open-source datasets, i.e., the ADE20k dataset, the WireFrame dataset, and the COCO dataset, totally nine synthesized datasets are generated. Each dataset is named after the distortion model that is used and the original dataset that the standard images are borrowed from. For example, if a dataset is synthesized based on the ED model using the standard images from the COCO dataset, it is named as an ED COCO dataset. 
 
