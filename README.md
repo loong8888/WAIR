@@ -1,18 +1,22 @@
 # WAIR
 ## Introduction
-This repository contains the dataset, code, and test results for the baseline method proposed in the paper [Wide-angle Image Rectification: A Survey](). Based on three types of distortion models, i.e., the FOV model (FOV for short), the one-parameter division model (DM for short) and the equidistant model (ED for short), and three open-source datasets, i.e., the ADE20k dataset, the WireFrame dataset, and the COCO dataset, totally nine synthesized datasets are generated. Each dataset is named after the distortion model that is used and the original dataset that the standard images are borrowed from. For example, if a dataset is synthesized based on the ED model using the standard images from the COCO dataset, it is named as an ED COCO dataset. 
-
+<p align="justify">
+This repository contains the dataset, code, and test results for the baseline method proposed in the paper [Wide-angle Image Rectification: A Survey](). Based on three types of distortion models, i.e., the FOV model (FOV for short), the one-parameter division model (DM for short) and the equidistant model (ED for short), and three open-source datasets, i.e., the ADE20k dataset, the WireFrame dataset, and the COCO dataset, totally nine synthesized datasets are generated. Each dataset is named after the distortion model that is used and the original dataset that the standard images are borrowed from. For example, if a dataset is synthesized based on the ED model using the standard images from the COCO dataset, it is named as an ED COCO dataset.
+</p>
 The architecture of the deep network is illustrated below. 
 ![](results/baseline.png)
 
+<p align="justify">
 The network is based on [ResNet50](), Which is pre-trained on [ImageNet](). The output of the network is the regressed distortion parameter $k$, and then the warp module taking the distorted image and parameter $k$ as input outputs the corrected image. It is a one-stage method and post-processing is not needed. The deep model is named after the synthesized training dataset it trained on. For example, if a deep model is trained on the DM WireFrame dataset, it is a DM WireFrame deep model or DM WireFrame model for short. Here we trained three deep models, i.e., the FOV ADE20k model, the DM ADE20k model, and the ED ADE20k model, and tested each one on all the nine synthesized datasets. The weights for each model can be downloaded via the link listed below.  Since they are all trained on the ADE20k dataset, we call them the FOV model, DM model, and ED model instead.
-
+</p>
 | FOV ADE20k model | DM ADE20k model | ED ADE20k model |
 | :----:| :----: | :----: |
 |    [weights]()   | [weights]()       |   [weights]()     |
 
 ## Test Results
+<p align="justify">
 For each standard dataset, we synthesized three distorted datasets based on the three distortion models, i.e., the FOV dataset, the DM dataset, and the ED dataset. The three deep models, i.e., the FOV model, the DM model, and the ED model, are tested one by one on these datasets. So we got a 3 by 3 metrics matrix for each standard dataset. Each row lists the results on different datasets while each column lists the results for different models. The metrics are listed below. Each table cell lists the ***PSNR/SSIM***. The visual results are available through the link listed below each table.
+</p>
 
 ### Test on ADE20k dataset 
 |      |	FOV   |	DM     |	ED    |
@@ -49,7 +53,9 @@ The visual results are shown [here](./results/COCO.md)
 | ![](results/ADE20K_division_model_dataset_DMDM_14.gif) | ![](results/WireFrame_division_model_dataset_DMDM_15.gif)      |   ![](results/COCO_division_model_dataset_DMDM_11.gif)    |
 
 ### Test on real fisheye video dataset
+<p align="justify">
 The real fisheye image has to be resized to 257x257 to match the input size of the network. But the distortion parameter $k$ estimated on this low-resolution image can be used to rectify the original high-resolution image with little more computation for the warp module. Here, we test the image at 256x256, 512x512, and 1024x1024. The time cost of the warp module is 1.2ms, 2.1ms, and 5.3ms , respectively. 
+</p>
 
 |           |            AlfaA            |            LectureB            |            LibraryE            | Warping time (ms) |
 | :-------: | :-------------------------: | :----------------------------: | :----------------------------: | :---------------: |
