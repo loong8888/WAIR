@@ -1,13 +1,15 @@
 # WAIR
 ## Introduction
 <p align="justify">
-This repository contains the dataset, code, and test results for the baseline method proposed in the paper <a href='Wide-angle Image Rectification: A Survey'></a>. Based on three types of distortion models, i.e., the FOV model (FOV for short), the one-parameter division model (DM for short) and the equidistant model (ED for short), and three open-source datasets, i.e., the ADE20k dataset, the WireFrame dataset, and the COCO dataset, totally nine synthesized datasets are generated. Each dataset is named after the distortion model that is used and the original dataset that the standard images are borrowed from. For example, if a dataset is synthesized based on the ED model using the standard images from the COCO dataset, it is named as an ED COCO dataset.
+This repository contains the dataset, code, and test results for the baseline method proposed in the paper <a href=''>Wide-angle Image Rectification: A Survey</a>. Based on three types of distortion models, i.e., the FOV model (FOV for short), the one-parameter division model (DM for short) and the equidistant model (ED for short), and three open-source datasets, i.e., the ADE20k dataset, the WireFrame dataset, and the COCO dataset, totally nine synthesized datasets are generated. Each dataset is named after the distortion model that is used and the original dataset that the standard images are borrowed from. For example, if a dataset is synthesized based on the ED model using the standard images from the COCO dataset, it is named as an ED COCO dataset.
 </p>
+
 The architecture of the deep network is illustrated below. 
+
 ![](results/baseline.png)
 
 <p align="justify">
-The network is based on <a href='ResNet50'></a>, Which is pre-trained on <a href='ImageNet'></a>. The output of the network is the regressed distortion parameter $k$, and then the warp module taking the distorted image and parameter $k$ as input outputs the corrected image. It is a one-stage method and post-processing is not needed. The deep model is named after the synthesized training dataset it trained on. For example, if a deep model is trained on the DM WireFrame dataset, it is a DM WireFrame deep model or DM WireFrame model for short. Here we trained three deep models, i.e., the FOV ADE20k model, the DM ADE20k model, and the ED ADE20k model, and tested each one on all the nine synthesized datasets. The weights for each model can be downloaded via the link listed below.  Since they are all trained on the ADE20k dataset, we call them the FOV model, DM model, and ED model instead.
+The network is based on <a href=''>ResNet50</a>, Which is pre-trained on <a href=''>ImageNet</a>. The output of the network is the regressed distortion parameter $k$, and then the warp module taking the distorted image and parameter $k$ as input outputs the corrected image. It is a one-stage method and post-processing is not needed. The deep model is named after the synthesized training dataset it trained on. For example, if a deep model is trained on the DM WireFrame dataset, it is a DM WireFrame deep model or DM WireFrame model for short. Here we trained three deep models, i.e., the FOV ADE20k model, the DM ADE20k model, and the ED ADE20k model, and tested each one on all the nine synthesized datasets. The weights for each model can be downloaded via the link listed below.  Since they are all trained on the ADE20k dataset, we call them the FOV model, DM model, and ED model instead.
 </p>
 
 | FOV ADE20k model | DM ADE20k model | ED ADE20k model |
